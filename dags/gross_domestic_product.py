@@ -93,6 +93,8 @@ def generate_report():
         
     y = cursor.fetchall()
     
+    y.sort()
+    
     list_of_categories = []
     list_of_columns = []
     for r in y:

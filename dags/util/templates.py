@@ -28,7 +28,7 @@ with piv_tb as (
 	FROM public.gdp
  	WHERE "year" in ({years_query}) 
 	GROUP BY country_id, "year"
-	ORDER BY country_id, "year" desc'  
+	ORDER BY country_id, "year"'  
 	) AS pivot_table("country_id" VARCHAR, {categories})),
 countries_tb as (
 	select  
